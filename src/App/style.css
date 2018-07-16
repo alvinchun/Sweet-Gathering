@@ -2,6 +2,10 @@ body{
 font-family: 'Amaranth', sans-serif;
 }
 
+h3{
+  text-decoration: none;
+}
+
 .Homepage {
 background-image:url('https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_1280.jpg');
 background-repeat: no-repeat;
@@ -10,7 +14,7 @@ height: 100vh;
 width: 100vw;
 text-align: center;
 background-position: center;
-color:#cc6600
+color:black;
 }
 
 .Allgatherings {
@@ -21,7 +25,7 @@ height: 100vh;
 width: 100vw;
 text-align: center;
 background-position: center;
-color:#cc6600
+color:black
 }
 
 .all-info-box{
@@ -44,7 +48,8 @@ height: 100vh;
 width: 100vw;
 text-align: center;
 background-position: center;
-color:#cc6600
+color: black;
+text-decoration: none;
 }
 
 
@@ -85,6 +90,7 @@ color:#cc6600
   margin: 0 auto;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .Createpage{
@@ -111,6 +117,11 @@ input{
   font-size: 15px;
   border-radius: 5px;
   text-align: center;
+}
+
+.description-input{
+  height: 100px !important;
+  width: 400px;
 }
 
 .create-button{

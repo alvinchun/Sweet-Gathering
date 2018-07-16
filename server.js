@@ -10,8 +10,7 @@ const app = express();
 // Set the port based on the environment variable (PORT=8080 node server.js)
 // and fallback to 4567
 const PORT = process.env.PORT || 4567;
-const jsonParser = bodyParser.json();
-app.use(jsonParser);
+app.use("/", express.static("./build/"));
 
 //getiing all cities used for the form dropdown and converting the city code to name on summary page
 

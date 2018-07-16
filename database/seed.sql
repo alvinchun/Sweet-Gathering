@@ -1,4 +1,3 @@
--- \c gathering_db
 
 DELETE FROM gatherings;
 

@@ -87,7 +87,7 @@ class CreateGatheringPage extends Component {
           </p>
           <p>
             <label for="description">Descriptioin: </label>
-            <input
+            <input className="description-input"
               type="text"
               name="description"
               placeholder="Descriptioin of the event"

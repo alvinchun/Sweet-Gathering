@@ -1,8 +1,8 @@
-#Sweet Gathering
+# Sweet Gathering
 
-##Live Link: https://sweet-gathering.herokuapp.com/
+## Live Link: https://sweet-gathering.herokuapp.com/
 
-###Technologies:
+### Technologies:
 React
 CSS
 JSX

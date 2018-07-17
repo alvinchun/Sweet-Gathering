@@ -7,7 +7,6 @@ class Homepage extends Component {
     return <div className="Homepage">
         <div className="main-wrapper">
           <h1 className="main-title">Sweet Gathering 😎</h1>
-          <h2 />
         </div>
       </div>;
   }

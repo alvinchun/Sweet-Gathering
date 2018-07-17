@@ -25,9 +25,9 @@ I feel this project would be especially useful to people who want to save their 
 
 But there are few more features I want to add. I want to add more features such as add an function that leads postings posts into calender component to see better and easy view of when the gatherings are on. For authentication functionality, I was trying to use the auth0 library but still working on it.
 
- ## Wireframes:
-![Homepage](/Wireframes/Homepage.png)
-![Allpage](/Wireframes/Allpage.png)
-![Createpage](/Wireframes/Createpage.png)
-![Showpage](/Wireframes/Showpage.png)
+## Wireframes:
+![Homepage](./Wireframes/Homepage.png)
+![Allpage](./Wireframes/Allpage.png)
+![Createpage](./Wireframes/Createpage.png)
+![Showpage](./Wireframes/Showpage.png)
 

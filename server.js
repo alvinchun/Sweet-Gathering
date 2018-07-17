@@ -12,6 +12,8 @@ const app = express();
 const PORT = process.env.PORT || 4567;
 app.use("/", express.static("./build/"));
 
+const jsonParser = bodyParser.json();
+app.use(jsonParser);
 //getiing all cities used for the form dropdown and converting the city code to name on summary page
 
 app.get("/gatherings.json", (request, response) => {

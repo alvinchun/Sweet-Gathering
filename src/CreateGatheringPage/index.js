@@ -69,11 +69,6 @@ class CreateGatheringPage extends Component {
     }
     return (
       <div className="Createpage">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li> <Link to="/gathering/create">Create</Link></li>
-          <li> <Link to="/gatherings">Gatherings</Link></li>
-        </ul>
         <h1>Create New Gathering</h1>
         <form className="create-info-form" onChange={this.onFormChange} onSubmit={this.onFormSubmit}>
           <p>

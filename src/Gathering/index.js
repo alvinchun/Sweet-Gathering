@@ -10,11 +10,9 @@ class Gathering extends Component {
     console.log(this.props);
     return <div className="gathering">
         <div className="gathering-details">
-          <h3>
-            <Link to={`/gatherings/${this.props.id}`}>
-              <b>Title: {this.props.title}</b>
-            </Link>
-          </h3>
+          <h2>
+            <b>Title: {this.props.title}</b>
+          </h2>
           <p>Description: {this.props.description}</p>
           <p>Date: {this.props.date}</p>
           <p>Time: {this.props.time}</p>

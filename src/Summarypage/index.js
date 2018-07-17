@@ -62,17 +62,6 @@ class Summarypage extends Component {
   render() {
 return (
   <div className="Summarypage">
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/gathering/create">Create</Link>
-      </li>
-      <li>
-        <Link to="/gatherings">Gatherings</Link>
-      </li>
-    </ul>
     <div className="single-info-box">
       <Gathering
         id={this.state.id}

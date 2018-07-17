@@ -1,4 +1,4 @@
-
+DROP DATABASE gathering_db;
 CREATE DATABASE gathering_db;
 
 DROP TABLE gatherings;

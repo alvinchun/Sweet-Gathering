@@ -26,22 +26,12 @@ class Allgatherings extends Component {
   render() {
     return (
       <div className="Allgatherings">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/gathering/create">Create</Link>
-          </li>
-          <li>
-            <Link to="/gatherings">Gatherings</Link>
-          </li>
-        </ul>
         <h1>All Gatherings</h1>
         {this.state.gatherings.map(gathering => {
           return (
+            <Link to={`/gatherings/${gathering.id}`}>
             <div className="all-info-box">
-              <Link to={`/gatherings/${gathering.id}`}>
+
                 <Gathering
                   key={gathering.id}
                   id={gathering.id}
@@ -52,8 +42,9 @@ class Allgatherings extends Component {
                   latitude={gathering.latitude}
                   longitude={gathering.longitude}
                 />
-              </Link>
+
             </div>
+            </Link>
           );
         })}
       </div>

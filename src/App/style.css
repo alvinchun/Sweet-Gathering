@@ -1,31 +1,43 @@
-body{
+.App {
 font-family: 'Amaranth', sans-serif;
+background-image:url('https://images.unsplash.com/photo-1455734729978-db1ae4f687fc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c391a28620658e1a99824868a8e00566&auto=format&fit=crop&w=1950&q=80');
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
+text-align: center;
+text-decoration: none;
+margin: 0;
+padding: 0;
+height: 100vh;
+width: 100vw;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(175, 175, 175, .7)
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: red;
+  color: white;
 }
 
 h3{
   text-decoration: none;
-}
-
-.Homepage {
-background-image:url('https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_1280.jpg');
-background-repeat: no-repeat;
-background-size:cover;
-height: 100vh;
-width: 100vw;
-text-align: center;
-background-position: center;
-color:black;
-}
-
-.Allgatherings {
-background-image:url('https://cdn.pixabay.com/photo/2015/07/29/00/11/sunset-865310_1280.jpg');
-background-repeat: no-repeat;
-background-size:cover;
-height: 100vh;
-width: 100vw;
-text-align: center;
-background-position: center;
-color:black
 }
 
 .all-info-box{
@@ -40,39 +52,34 @@ color:black
 
 }
 
-.Summarypage {
-background-image:url('https://cdn.pixabay.com/photo/2014/12/16/22/25/youth-570881_1280.jpg');
-background-repeat: no-repeat;
-background-size:cover;
-height: 100vh;
-width: 100vw;
-text-align: center;
-background-position: center;
-color: black;
-text-decoration: none;
-}
-
-
 .single-info-box{
+
   text-decoration: none;
   margin: 0 auto;
+  margin-top: 70px;
   width: 50%;
   height: 70vh;
   text-align: center;
   background: rgba(175, 175, 175, .7);
   border-radius: 20px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .create-info-form{
   text-decoration: none;
-  margin: 0 auto;
+  margin: 1000px 0 0 0;
   width: 50%;
   height: 50vh;
   text-align: center;
   background: rgba(175, 175, 175, .7);
   border-radius: 20px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .edit-info-form{
@@ -84,6 +91,9 @@ text-decoration: none;
   background: rgba(175, 175, 175, .7);
   border-radius: 20px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .item-map{
@@ -152,24 +162,32 @@ padding: 10px;
 margin: 3px;
 border-radius:10px;
 text-align: center;
+display: inline-block;
 }
 
-.App {
-  width:100%;
-  height:100%;
+.edit-page-buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#root {
-  width:1500px;
-  height:900px;
-}
 
+
+.main-title{
+color: yellow;
+text-shadow:3px 3px black;
+font-size: 100px;
+margin-bottom: 0;
+font-family: 'Yellowtail', cursive;
+}
 
 h1{
-color: black;
-text-shadow:3px 3px white;
-font-size: 85px;
+color: orange;
+text-shadow:3px 3px black;
+font-size: 65px;
 margin-bottom: 0;
+font-family: 'Gochi Hand', cursive;
 }
 
 h2{
@@ -180,18 +198,41 @@ font-style: italic;
 font-size: 30px;
 
 }
-.Navbar{
-  height: -100px;
+.navbar{
+    background-color: #333;
+    width: 100%;
+    height: 3em;
+    display: inline-block;
+    text-align: left;
+    margin-top: 0;
 }
+
+.navbar a {
+    font-size: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
 ul {
     list-style-type: none;
     margin: 10;
-    padding: 30;
     overflow: hidden;
     background-color: #333;
 }
 
-li {
+/* li {
     float: left;
 }
 
@@ -209,20 +250,8 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
     display: inline-block;
-}
+} */
 
-
-.flex-wrapper {
-  height: 60vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  text-align:center;
-  flex-direction: column;
-  flex-grow: 1;
-  color:turquoise
-
-}
 
 button{
 background: white;

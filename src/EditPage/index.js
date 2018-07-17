@@ -90,17 +90,6 @@ class EditPage extends Component {
       return <Redirect to={`/gatherings/${id}`} />;
     }
     return <div className="EditGathering">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/gathering/create">Create</Link>
-          </li>
-          <li>
-            <Link to="/gatherings">Gatherings</Link>
-          </li>
-        </ul>
         <h1>Edit Gathering</h1>
         <div className="edit-info-form">
           <form onChange={this.onFormChange} onSubmit={this.onFormSubmit}>
@@ -128,6 +117,7 @@ class EditPage extends Component {
               <label for="city">Longitude: </label>
               <input type="text" name="longitude" placeholder="Longitude" value={this.state.longitude} />
             </p>
+            <div className="edit-page-buttons">
             <Link to={`/gatherings/${this.state.id}`}>
               <p>
                 <input id="update" type="submit" value="Previous" />
@@ -136,6 +126,7 @@ class EditPage extends Component {
             <p>
               <input id="update" type="submit" value="Update" />
             </p>
+            </div>
           </form>
         </div>
       </div>;

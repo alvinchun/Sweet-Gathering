@@ -14,11 +14,22 @@ class App extends Component {
   render() {
     return <Router>
         <div className="App">
-          <Route path="/" exact component={Homepage} />
-          <Route path="/gatherings" exact component={Allgatherings} />
-          <Route path="/gatherings/:id" exact component={Summarypage} />
-          <Route path="/gathering/create" exact component={CreateGatheringPage} />
-          <Route path="/gatherings/:id/edit" exact component={EditPage} />
+          <div className="navbar">
+            <div class="topnav">
+              <a class="active" href="/">
+                Home
+              </a>
+              <a href="/gathering/create">New</a>
+              <a href="/gatherings">All Gatherings</a>
+            </div>
+          </div>
+          <div>
+            <Route path="/" exact component={Homepage} />
+            <Route path="/gatherings" exact component={Allgatherings} />
+            <Route path="/gatherings/:id" exact component={Summarypage} />
+            <Route path="/gathering/create" exact component={CreateGatheringPage} />
+            <Route path="/gatherings/:id/edit" exact component={EditPage} />
+          </div>
         </div>
       </Router>;
   }

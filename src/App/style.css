@@ -24,6 +24,15 @@ height: 100vh;
 width: 100vw;
 }
 
+div.Allgatherings{
+text-decoration: none;
+color: red;
+}
+
+.Summarypage{
+
+}
+
 
 .topnav {
   overflow: hidden;
@@ -62,7 +71,6 @@ h3{
   background: rgba(175, 175, 175, .7);
   border-radius: 20px;
   text-decoration: none;
-
 }
 
 .single-info-box{
@@ -205,11 +213,11 @@ font-family: 'Gochi Hand', cursive;
 }
 
 h2{
-font-family: 'Open Sans', sans-serif;
-text-shadow:2px 2px #000000;
+/* text-shadow:2px 2px #000000;
 font-weight: 600;
 font-style: italic;
-font-size: 30px;
+font-size: 30px; */
+font-family: 'Ubuntu', sans-serif;
 
 }
 .navbar{
@@ -245,7 +253,9 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
+p{
+  font-family: 'Ubuntu', sans-serif;
+}
 /* li {
     float: left;
 }

@@ -11,8 +11,7 @@ class CreateGatheringPage extends Component {
       description: "",
       date: "",
       time: "",
-      latitude: "",
-      longitude: "",
+      address:"",
       created: false,
       redirectToNewPage: false //??
     }
@@ -67,70 +66,35 @@ class CreateGatheringPage extends Component {
       let id = this.state.id;
       return <Redirect to={`/gatherings/${id}`} />;
     }
-    return (
-      <div className="Createpage">
+    return <div className="Createpage">
         <h1>Create New Gathering</h1>
         <form className="create-info-form" onChange={this.onFormChange} onSubmit={this.onFormSubmit}>
           <p>
             <label for="title">Title: </label>
-            <input
-              type="text"
-              name="title"
-              placeholder="Title"
-              value={this.state.title}
-            />
+            <input type="text" name="title" placeholder="Title" value={this.state.title} />
           </p>
           <p>
             <label for="description">Descriptioin: </label>
-            <input className="description-input"
-              type="text"
-              name="description"
-              placeholder="Descriptioin of the event"
-              value={this.state.description}
-            />
+            <input className="description-input" type="text" name="description" placeholder="Descriptioin of the event" value={this.state.description} />
           </p>
           <p>
             <label for="date">Date: </label>
-            <input
-              type="date"
-              name="date"
-              placeholder="date"
-              value={this.state.date}
-            />
+            <input type="date" name="date" placeholder="date" value={this.state.date} />
           </p>
           <p>
             <label for="time">Time: </label>
-            <input
-              type="time"
-              name="time"
-              placeholder="time"
-              value={this.state.time}
-            />
+            <input type="time" name="time" placeholder="time" value={this.state.time} />
           </p>
           <p>
-            <label for="latitude">Latitude: </label>
-            <input
-              type="text"
-              name="latitude"
-              placeholder="Latitude"
-              value={this.state.latitude}
-            />
+            <label for="latitude">Address: </label>
+            <input type="text" name="address" placeholder="Place the address" value={this.state.address} />
           </p>
-          <p>
-            <label for="city">Longitude: </label>
-            <input
-              type="text"
-              name="longitude"
-              placeholder="Longitude"
-              value={this.state.longitude}
-            />
-          </p>
+
           <p>
             <input className="create-button" type="submit" value="Create" />
           </p>
         </form>
-      </div>
-    );
+      </div>;
   }
 }
 

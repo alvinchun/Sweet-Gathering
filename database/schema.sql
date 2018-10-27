@@ -9,8 +9,7 @@ CREATE TABLE gatherings(
   description TEXT NOT NULL,
   date TEXT NOT NUll,
   time TIME NOT NULL,
-  latitude DECIMAL NOT NULL,
-  longitude DECIMAL NOT NULL
+  address TEXT NOT NULL
 );
 
 

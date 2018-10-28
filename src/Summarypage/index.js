@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
 import Gathering from "../Gathering";
-import { GoogleApiWrapper } from "google-maps-react";
-import MapContainer from "../MapContainer";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -72,11 +70,6 @@ return (
       />
 
       <div className="item-map">
-        <MapContainer
-          google={this.props.google}
-          lat={this.state.latitude}
-          lng={this.state.longitude}
-        />
       </div>
       <div>
         <Link to={`/gatherings/${this.state.id}/edit`}>
@@ -103,6 +96,4 @@ return (
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyDQPyly4b7F7qXCEJBwqd6IE1ukHbBOX9s"
-})(Summarypage);
+export default Summarypage

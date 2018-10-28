@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Gathering from "../Gathering";
 import "./style.css";
-import { GoogleApiWrapper } from "google-maps-react";
-import MapContainer from "../MapContainer";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Allgatherings extends Component {
@@ -39,8 +37,7 @@ class Allgatherings extends Component {
                   description={gathering.description}
                   date={gathering.date}
                   time={gathering.time}
-                  latitude={gathering.latitude}
-                  longitude={gathering.longitude}
+                  address={gathering.address}
                 />
 
             </div>

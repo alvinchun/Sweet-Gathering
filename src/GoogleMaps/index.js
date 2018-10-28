@@ -6,11 +6,11 @@ const {
   GoogleMap,
   Marker,
 } = require("react-google-maps");
-const { SearchBox } = require("react-google-maps/lib/components/places/SearchBox");
+const { SearchBox } = require("../Searchbox");
 
-const MapWithASearchBox = compose(
+export const MapWithASearchBox = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDQPyly4b7F7qXCEJBwqd6IE1ukHbBOX9s&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
     mapElement: <div style={{ height: `100%` }} />,
@@ -100,19 +100,3 @@ const MapWithASearchBox = compose(
     )}
   </GoogleMap>
 );
-
-<MapWithASearchBox />
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
-Support us  •  Feedback?

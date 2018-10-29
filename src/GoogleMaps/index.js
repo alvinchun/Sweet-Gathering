@@ -1,14 +1,19 @@
-const _ = require("lodash");
-const { compose, withProps, lifecycle } = require("recompose");
-const {
+import React from "react";
+import google from "google"
+import _ from "lodash";
+import { compose, withProps, lifecycle } from "recompose";
+
+import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   Marker,
-} = require("react-google-maps");
-const { SearchBox } = require("../Searchbox");
+} from "react-google-maps";
 
-export const MapWithASearchBox = compose(
+import { SearchBox } from "../Searchbox";
+
+
+const MapWithASearchBox = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDQPyly4b7F7qXCEJBwqd6IE1ukHbBOX9s&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
@@ -100,3 +105,5 @@ export const MapWithASearchBox = compose(
     )}
   </GoogleMap>
 );
+
+export default MapWithASearchBox;

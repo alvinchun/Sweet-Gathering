@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import "./style.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-// import MapWithASearchBox from "../GoogleMaps"
+import MapWithASearchBox from "../GoogleMaps"
 
 class CreateGatheringPage extends Component {
   constructor() {
@@ -86,6 +86,7 @@ class CreateGatheringPage extends Component {
             <label for="time">Time: </label>
             <input type="time" name="time" placeholder="time" value={this.state.time} />
           </p>
+          <MapWithASearchBox />
           {/* <p>
             <label for="latitude">Address: </label>
             <input type="text" name="address" placeholder="Place the address" value={this.state.address} />
